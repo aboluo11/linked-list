@@ -12,6 +12,7 @@ int main() {
         list.push(i);
     }
 
+    assert(list.peek() == sz-1);
 //    for(int i=sz-1; i>=0; i--){
 //        assert(list.pop() == i);
 //    }

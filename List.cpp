@@ -29,3 +29,9 @@ std::optional<int> List::pop() {
     this->head = std::move(this->head->next);
     return res;
 }
+
+std::optional<int> List::peek() {
+    if (this->head == nullptr)
+        return {};
+    return this->head->elem;
+}

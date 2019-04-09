@@ -20,6 +20,7 @@ public:
     ~List();
     void push(int elem);
     std::optional<int> pop();
+    std::optional<int> peek();
 private:
     std::unique_ptr<Node> head;
 };
